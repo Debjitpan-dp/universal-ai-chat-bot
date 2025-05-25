@@ -120,6 +120,62 @@ Edit the `docker-compose.yml` file to modify:
 ### Adding New AI Models
 The application is designed to be extensible. See the developer README for technical details.
 
+## 🖥️ Technical Requirements
+
+- **Python:** 3.8 or higher
+- **Docker:** Version 20.10 or later (optional, for containerized setup)
+- **RAM:** 2GB minimum, 4GB recommended
+- **Storage:** 1GB free space
+- **Network:** Internet connection for AI APIs and web search
+
+## ▶️ How to Run the Application
+
+### Using Docker (Recommended)
+
+1. **Clone or download the project files**
+2. **Navigate to the project directory**
+3. **Start the application:**
+   ```bash
+   docker-compose up -d
+   ```
+4. **Access the applications:**
+   - **Streamlit Interface:** http://localhost:8501
+   - **HTML Interface:** http://localhost:8000
+   - **API Documentation:** http://localhost:8000/docs
+
+### Manual Setup (Without Docker)
+
+1. **Clone the repository and navigate to the project directory:**
+   ```bash
+   git clone https://github.com/yourusername/universal-chat-bot.git
+   cd universal-chat-bot
+   ```
+2. **Create and activate a virtual environment:**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Set your API keys in a `.env` file:**
+   ```
+   OPEN_AI_API_KEY=your-openai-key
+   ANTHROPIC_API_KEY=your-anthropic-key
+   ```
+5. **Start the FastAPI backend:**
+   ```bash
+   uvicorn main:app --reload
+   ```
+6. **Start the Streamlit frontend (in a new terminal):**
+   ```bash
+   streamlit run streamlitApp.py
+   ```
+7. **Open your browser and use the app:**
+   - Streamlit: http://localhost:8501
+   - API/HTML: http://localhost:8000
+
 ## 📊 System Requirements
 
 - **RAM:** 2GB minimum, 4GB recommended
