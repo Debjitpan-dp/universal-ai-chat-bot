@@ -147,7 +147,7 @@ The application is designed to be extensible. See the developer README for techn
 
 1. **Clone the repository and navigate to the project directory:**
    ```bash
-   git clone https://github.com/yourusername/universal-chat-bot.git
+   git clone https://github.com/Debjitpan-dp/universal-ai-chat-bot.git
    cd universal-chat-bot
    ```
 2. **Create and activate a virtual environment:**
